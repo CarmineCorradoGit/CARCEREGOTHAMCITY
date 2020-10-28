@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--nav-->
+    <header>
+        <nav class="nav_bar">
+            <img src="./assets/image/logo.png" alt="">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <div id="id01" class="modal">
+                
+                <form class="modal-content animate"  novalidate>
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./assets/image/logo.png" alt="logo" class="logo">
+                  </div>
+              
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="username" value="" type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input value="" id="password" type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                  </div>
+                </form>
+              </div>
+              <button type="button">Lista criminali</button>
+        </nav>
+        <div>
+            <h1 class="title">arkham asylum</h1>
+        </div>
+    </header>
+    <main>
+        <template id="template">
+            <div class="listaCriminali">
+
+            </div>
+        </template>
+
+    </main>
+
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
